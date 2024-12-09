@@ -1,4 +1,3 @@
-Yalla Bena! 🚀 I collaborated with a visionary startup as the Database Designer and Manager. I designed a SQL Server schema, developed a scalable Web API with .NET Core MVC, and optimized performance. Yalla Bena offers personalized travel planning, using Machine Learning for smarter recommendations.
 # 🎉 Yalla Bena Web API 🚀
 
 The **Yalla Bena Web API** is an exciting backend built using **.NET Core MVC** that powers the entire functionality of the **Yalla Bena** travel app. This API serves as the backbone for managing user data, preferences, bookings, and personalized travel recommendations. The goal is to create an unforgettable travel experience for our users! 🌍✈️
