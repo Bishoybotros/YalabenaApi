@@ -55,3 +55,4 @@ The **Yalla Bena Web API** is an exciting backend built using **.NET Core MVC** 
 
 The backend API is organized in a clean, modular structure to ensure maintainability and scalability:
 
+YallaBenaWebAPI/ ├── Controllers/ │ ├── UsersController.cs │ ├── PreferencesController.cs │ ├── BookingsController.cs │ └── RecommendationsController.cs ├── Models/ │ ├── User.cs │ ├── Preference.cs │ ├── Booking.cs │ └── Recommendation.cs ├── Data/ │ ├── YallaBenaContext.cs ├── Services/ │ ├── UserService.cs │ ├── PreferenceService.cs │ ├── BookingService.cs │ └── RecommendationService.cs ├── Migrations/ │ ├── InitialMigration.cs └── requirements.txt
