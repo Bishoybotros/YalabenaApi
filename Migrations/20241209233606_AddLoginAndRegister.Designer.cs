@@ -3,6 +3,7 @@ using System;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore.Infrastructure;
 using Microsoft.EntityFrameworkCore.Metadata;
+using Microsoft.EntityFrameworkCore.Migrations;
 using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 using YalabenaApi.Data;
 
@@ -11,9 +12,11 @@ using YalabenaApi.Data;
 namespace YalabenaApi.Migrations
 {
     [DbContext(typeof(YalabenaDbContext))]
-    partial class YalabenaDbContextModelSnapshot : ModelSnapshot
+    [Migration("20241209233606_AddLoginAndRegister")]
+    partial class AddLoginAndRegister
     {
-        protected override void BuildModel(ModelBuilder modelBuilder)
+        /// <inheritdoc />
+        protected override void BuildTargetModel(ModelBuilder modelBuilder)
         {
 #pragma warning disable 612, 618
             modelBuilder
@@ -315,9 +318,6 @@ namespace YalabenaApi.Migrations
 
                     SqlServerPropertyBuilderExtensions.UseIdentityColumn(b.Property<int>("UserId"));
 
-                    b.Property<int?>("AccountId")
-                        .HasColumnType("int");
-
                     b.Property<int>("Age")
                         .HasColumnType("int");
 
@@ -337,6 +337,10 @@ namespace YalabenaApi.Migrations
                         .IsRequired()
                         .HasColumnType("nvarchar(max)");
 
+                    b.Property<string>("Password")
+                        .IsRequired()
+                        .HasColumnType("nvarchar(max)");
+
                     b.Property<string>("Preferences")
                         .IsRequired()
                         .HasColumnType("nvarchar(max)");
@@ -345,8 +349,6 @@ namespace YalabenaApi.Migrations
                         .HasColumnType("int");
 
                     b.HasKey("UserId");
-
-                    b.HasIndex("AccountId");
 
                     b.ToTable("GuestUsers");
                 });
@@ -496,13 +498,6 @@ namespace YalabenaApi.Migrations
                     b.Navigation("User");
                 });
 
-            modelBuilder.Entity("YalabenaApi.Models.User", b =>
-                {
-                    b.HasOne("YalabenaApi.Models.Account", null)
-                        .WithMany("GuestUsers")
-                        .HasForeignKey("AccountId");
-                });
-
             modelBuilder.Entity("YalabenaApi.Models.UserActivity", b =>
                 {
                     b.HasOne("YalabenaApi.Models.Activity", "Activity")
@@ -528,11 +523,6 @@ namespace YalabenaApi.Migrations
                     b.Navigation("Itinerary");
 
                     b.Navigation("User");
-                });
-
-            modelBuilder.Entity("YalabenaApi.Models.Account", b =>
-                {
-                    b.Navigation("GuestUsers");
                 });
 
             modelBuilder.Entity("YalabenaApi.Models.Activity", b =>

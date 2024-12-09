@@ -29,7 +29,7 @@ namespace YalabenaApi.Data
         public DbSet<PaymentMethod> PaymentMethods { get; set; }
         public DbSet<Preference> Preferences { get; set; }
         public DbSet<Review> UsersReviews { get; set; }
-
+        public DbSet<Account> Accounts { get; set; }
 
 
         protected override void OnModelCreating(ModelBuilder modelBuilder)

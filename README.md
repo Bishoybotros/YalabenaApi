@@ -56,3 +56,27 @@ The **Yalla Bena Web API** is an exciting backend built using **.NET Core MVC** 
 The backend API is organized in a clean, modular structure to ensure maintainability and scalability:
 
 YallaBenaWebAPI/ ├── Controllers/ │ ├── UsersController.cs │ ├── PreferencesController.cs │ ├── BookingsController.cs │ └── RecommendationsController.cs ├── Models/ │ ├── User.cs │ ├── Preference.cs │ ├── Booking.cs │ └── Recommendation.cs ├── Data/ │ ├── YallaBenaContext.cs ├── Services/ │ ├── UserService.cs │ ├── PreferenceService.cs │ ├── BookingService.cs │ └── RecommendationService.cs ├── Migrations/ │ ├── InitialMigration.cs └── requirements.txt
+
+
+## 🚀 How to Get Started
+
+1. **Clone the Repository:**
+   ```bash
+   git clone https://github.com/Bishoybotros/YalabenaApi.git
+
+2. **Install Dependencies:** Open the project in Visual Studio, restore NuGet packages, and set up your project.
+
+3. **Set Up SQL Server:** Ensure that SQL Server is installed and the database is properly configured. The database schema is available in the Data/ folder.
+
+4. **Run the Application:** Start the application from Visual Studio, and the API will be up and running, ready to serve your front-end app.
+
+## 🧑‍💻 How to Use the API
+Authentication: All sensitive routes require a JWT token for secure access. Tokens are provided after a successful login.
+
+## 👥 Contributing
+We welcome contributions! If you're interested in improving the API or adding new features, feel free to fork the repository, make changes, and submit a pull request. Make sure to follow the existing coding standards and guidelines.
+
+📜 License
+This project is licensed under the MIT License. See the LICENSE.md file for more information.
+
+

@@ -13,9 +13,9 @@ namespace YalabenaApi.Models
         [DataType(DataType.EmailAddress)]
         public string Email { get; set; }
 
-        [Required]
-        [DataType(DataType.Password)]
-        public string Password { get; set; }
+        //[Required]
+        //[DataType(DataType.Password)]
+        //public string Password { get; set; }
         [Required]
         [DataType(DataType.PhoneNumber)]
         public int phone { get; set; }
