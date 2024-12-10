@@ -72,7 +72,7 @@ The **Yalla Bena Web API** is an exciting backend built using **.NET Core Web Ap
 
 1. **Clone the Repository:**
    ```bash
-   git clone https://github.com/Bishoybotros/YalabenaApi.git
+   git clone https://github.com/Bishoybotros/YallabenaWebApi.git
 
 2. **Install Dependencies:** Open the project in Visual Studio, restore NuGet packages, and set up your project.
    ### Packages:
