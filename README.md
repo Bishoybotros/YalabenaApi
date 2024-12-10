@@ -50,13 +50,13 @@ The **Yalla Bena Web API** is an exciting backend built using **.NET Core MVC** 
  **/api/activities**
 **/api/activities/{id}**
 
-- ### 4. Payment Management:
+### 5. Payment Management:
   **/api/payments**
 
-  - ### 4. Real-time Notifications:
+### 6. Real-time Notifications:
   **/api/notifications**
 
-  - ### 4. Monitoring:
+### 7. Monitoring:
   **/api/monitoring**
 
 ## 🛠️Technology Stack
