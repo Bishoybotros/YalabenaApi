@@ -76,16 +76,16 @@ The **Yalla Bena Web API** is an exciting backend built using **.NET Core MVC** 
 
 2. **Install Dependencies:** Open the project in Visual Studio, restore NuGet packages, and set up your project.
    ### Packages:
-1. AutoMapper
-2. BCrypt.Net-Next
-3. FluentValidation
-4. Microsoft.AspNetCore.SignalR
-5. Microsoft.Data.SqlClient
-6. Microsoft.IdentityModel.Tokens
-7. Moq
-8. Newtonsoft.Json
-9. Swashbuckle.AspNetCore
-10. xunit
+- AutoMapper
+- BCrypt.Net-Next
+- FluentValidation
+- Microsoft.AspNetCore.SignalR
+- Microsoft.Data.SqlClient
+- Microsoft.IdentityModel.Tokens
+- Moq
+- Newtonsoft.Json
+- Swashbuckle.AspNetCore
+- xunit
 
 4. **Set Up SQL Server:** Ensure that SQL Server is installed and the database is properly configured. The database schema is available in the Data/ folder.
 
