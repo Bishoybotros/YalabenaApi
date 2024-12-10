@@ -8,7 +8,7 @@ namespace YalabenaApi.Models
         public int BookingId { get; set; }
         public string PaymentStatus { get; set; }
        
-
+        public int UserId { get; set; } 
         public User User { get; set; }
        
        

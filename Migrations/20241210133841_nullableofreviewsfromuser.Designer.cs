@@ -3,6 +3,7 @@ using System;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore.Infrastructure;
 using Microsoft.EntityFrameworkCore.Metadata;
+using Microsoft.EntityFrameworkCore.Migrations;
 using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 using YalabenaApi.Data;
 
@@ -11,9 +12,11 @@ using YalabenaApi.Data;
 namespace YalabenaApi.Migrations
 {
     [DbContext(typeof(YalabenaDbContext))]
-    partial class YalabenaDbContextModelSnapshot : ModelSnapshot
+    [Migration("20241210133841_nullableofreviewsfromuser")]
+    partial class nullableofreviewsfromuser
     {
-        protected override void BuildModel(ModelBuilder modelBuilder)
+        /// <inheritdoc />
+        protected override void BuildTargetModel(ModelBuilder modelBuilder)
         {
 #pragma warning disable 612, 618
             modelBuilder

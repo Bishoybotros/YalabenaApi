@@ -1,4 +1,5 @@
 ﻿using System.ComponentModel.DataAnnotations;
+using System.Diagnostics.CodeAnalysis;
 
 namespace YalabenaApi.Models
 {
@@ -27,13 +28,23 @@ namespace YalabenaApi.Models
         [Required]
 
         public string Country { get; set; }
-        public string Preferences { get; set; }
-
+        // public string Preferences { get; set; }
+        [AllowNull]
         public ICollection<Itinerary> Itineraries { get; set; }
+        [AllowNull]
         public ICollection<Booking> Bookings { get; set; }
-        public ICollection<Preference> UserPreferences { get; set; }
+        [AllowNull]
+
+        public Preference UserPreferences { get; set; }
+        [AllowNull]
+
         public ICollection<Review> Reviews { get; set; }
+        [AllowNull]
+
         public ICollection<UserActivity> Activities { get; set; }
+        
+
+       
     }
 
 }

@@ -36,6 +36,50 @@ namespace YalabenaApi.Data
         {
             base.OnModelCreating(modelBuilder);
 
+
+
+
+
+            modelBuilder.Entity<User>()
+                .HasMany(u => u.Itineraries)
+                .WithOne(i => i.User)
+                .HasForeignKey(i => i.UserId);
+
+
+
+
+
+            modelBuilder.Entity<User>()
+                .HasMany(u => u.Reviews) // A user has many reviews
+                .WithOne(r => r.Users) // A review belongs to one user
+                .HasForeignKey(u => u.UserId); // Specify the foreign key in the Review entity
+
+
+
+            // One-to-Many: User -> Bookings
+            modelBuilder.Entity<User>()
+                .HasMany(u => u.Bookings)
+                .WithOne(b => b.User)
+                .HasForeignKey(b => b.UserId)
+                .IsRequired(false);
+
+            // One-to-One: User -> Preference
+            modelBuilder.Entity<User>()
+                .HasOne(u => u.UserPreferences)
+                .WithOne(p => p.User)
+                .HasForeignKey<Preference>(p => p.UserId)
+                .IsRequired(false); // Optional relationship (if preferences aren't mandatory)
+
+           
+
+            // One-to-Many: User -> Activities
+            modelBuilder.Entity<User>()
+                .HasMany(u => u.Activities)
+                .WithOne(a => a.User)
+                .HasForeignKey(a => a.UserId)
+                .IsRequired(false);
+
+
             // Composite key for ActivityTransportation
             modelBuilder.Entity<ActivityTransportation>()
                 .HasKey(at => new { at.ActivityId, at.TransportId });
@@ -71,10 +115,7 @@ namespace YalabenaApi.Data
         .HasKey(ua => new { ua.UserId, ua.ActivityId, ua.ItineraryId });
 
     // Relationships
-    modelBuilder.Entity<UserActivity>()
-        .HasOne(ua => ua.User)
-        .WithMany(u => u.Activities)
-        .HasForeignKey(ua => ua.UserId);
+    
 
     modelBuilder.Entity<UserActivity>()
         .HasOne(ua => ua.Activity)

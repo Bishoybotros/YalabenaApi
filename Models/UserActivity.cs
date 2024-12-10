@@ -9,6 +9,8 @@
         // Navigation Properties
         public User User { get; set; }
         public Activity Activity { get; set; }
+
+
         public Itinerary Itinerary { get; set; }
     }
 

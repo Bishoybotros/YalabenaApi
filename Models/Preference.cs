@@ -10,7 +10,7 @@ namespace YalabenaApi.Models
         public string TransportType { get; set; }
 
 
-
+        public int UserId { get; set; } 
         public User User { get; set; }
         [DataType(DataType.Currency)]
         public int? Budget { get; set; }
