@@ -47,17 +47,18 @@ The **Yalla Bena Web API** is an exciting backend built using **.NET Core MVC** 
   Get a list of all bookings made by a specific user, making travel planning easier.
 
 ### 4. **Activity Management:**
- **/api/activities**
-**/api/activities/{id}**
+- **/api/activities**
+- **/api/activities/{id}**
+
 
 ### 5. Payment Management:
-  **/api/payments**
+ -  **/api/payments**
 
 ### 6. Real-time Notifications:
-  **/api/notifications**
+ - **/api/notifications**
 
 ### 7. Monitoring:
-  **/api/monitoring**
+ - **/api/monitoring**
 
 ## 🛠️Technology Stack
 
