@@ -75,7 +75,7 @@ The **Yalla Bena Web API** is an exciting backend built using **.NET Core MVC** 
    git clone https://github.com/Bishoybotros/YalabenaApi.git
 
 2. **Install Dependencies:** Open the project in Visual Studio, restore NuGet packages, and set up your project.
-   **Packages:**
+   ### Packages:
 1. AutoMapper
 2. BCrypt.Net-Next
 3. FluentValidation
