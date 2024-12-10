@@ -1,6 +1,6 @@
 # 🎉 Yalla Bena Web API 🚀
 
-The **Yalla Bena Web API** is an exciting backend built using **.NET Core MVC** that powers the entire functionality of the **Yalla Bena** travel app. This API serves as the backbone for managing user data, preferences, bookings, and personalized travel recommendations. The goal is to create an unforgettable travel experience for our users! 🌍✈️
+The **Yalla Bena Web API** is an exciting backend built using **.NET Core Web Api** that powers the entire functionality of the **Yalla Bena** travel app. This API serves as the backbone for managing user data, preferences, bookings, and personalized travel recommendations. The goal is to create an unforgettable travel experience for our users! 🌍✈️
 
 ## 🔑 Key Features
 
@@ -12,7 +12,7 @@ The **Yalla Bena Web API** is an exciting backend built using **.NET Core MVC** 
 
 ## 🛠️ Technologies Used
 
-- **Backend:** Built with **.NET Core MVC**, providing a RESTful Web API to handle the core operations of the app.
+- **Backend:** Built with **.NET Core Web Api**, providing a RESTful Web API to handle the core operations of the app.
 - **Database:** **SQL Server** to securely store and manage all data, including user profiles, preferences, and bookings.
 - **Machine Learning:** Integrating the **KNN (K-Nearest Neighbors)** algorithm for intelligent, personalized recommendations based on user preferences and past activities.
 - **Security:** Robust authentication and data encryption protocols ensure safe and secure user interactions and data privacy. 🔒
