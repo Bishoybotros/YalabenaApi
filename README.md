@@ -21,10 +21,10 @@ The **Yalla Bena Web API** is an exciting backend built using **.NET Core MVC** 
 
 ### 1. **User Endpoints**
 
-- **POST /api/users/register**  
+- **POST /api/accounts/register**  
   Register a new user to start their travel adventure.
   
-- **POST /api/users/login**  
+- **POST /api/accounts/login**  
   Login a user and return a JWT token for secure authentication.
 
 - **GET /api/users/{id}**  
@@ -46,16 +46,25 @@ The **Yalla Bena Web API** is an exciting backend built using **.NET Core MVC** 
 - **GET /api/bookings/{userId}**  
   Get a list of all bookings made by a specific user, making travel planning easier.
 
-### 4. **Recommendation Endpoints**
+### 4. **Activity Management:**
+ **/api/activities**
+**/api/activities/{id}**
 
-- **GET /api/recommendations/{userId}**  
-  Fetch dynamic, personalized travel recommendations based on a user's preferences. Whether it's hotels, transport, or activities, we've got it covered! 🌟
+- ### 4. Payment Management:
+  **/api/payments**
 
-## 📂 Project Structure
+  - ### 4. Real-time Notifications:
+  **/api/notifications**
 
-The backend API is organized in a clean, modular structure to ensure maintainability and scalability:
+  - ### 4. Monitoring:
+  **/api/monitoring**
 
-YallaBenaWebAPI/ ├── Controllers/ │ ├── UsersController.cs │ ├── PreferencesController.cs │ ├── BookingsController.cs │ └── RecommendationsController.cs ├── Models/ │ ├── User.cs │ ├── Preference.cs │ ├── Booking.cs │ └── Recommendation.cs ├── Data/ │ ├── YallaBenaContext.cs ├── Services/ │ ├── UserService.cs │ ├── PreferenceService.cs │ ├── BookingService.cs │ └── RecommendationService.cs ├── Migrations/ │ ├── InitialMigration.cs └── requirements.txt
+## 🛠️Technology Stack
+
+**Backend:** ASP.NET Core MVC
+**Database:** SQL Server
+**Security**: Robust authentication and data encryption
+
 
 
 ## 🚀 How to Get Started
@@ -65,10 +74,21 @@ YallaBenaWebAPI/ ├── Controllers/ │ ├── UsersController.cs │ ├
    git clone https://github.com/Bishoybotros/YalabenaApi.git
 
 2. **Install Dependencies:** Open the project in Visual Studio, restore NuGet packages, and set up your project.
+   **Packages:**
+1. AutoMapper
+2. BCrypt.Net-Next
+3. FluentValidation
+4. Microsoft.AspNetCore.SignalR
+5. Microsoft.Data.SqlClient
+6. Microsoft.IdentityModel.Tokens
+7. Moq
+8. Newtonsoft.Json
+9. Swashbuckle.AspNetCore
+10. xunit
 
-3. **Set Up SQL Server:** Ensure that SQL Server is installed and the database is properly configured. The database schema is available in the Data/ folder.
+4. **Set Up SQL Server:** Ensure that SQL Server is installed and the database is properly configured. The database schema is available in the Data/ folder.
 
-4. **Run the Application:** Start the application from Visual Studio, and the API will be up and running, ready to serve your front-end app.
+5. **Run the Application:** Start the application from Visual Studio, and the API will be up and running, ready to serve your front-end app.
 
 ## 🧑‍💻 How to Use the API
 Authentication: All sensitive routes require a JWT token for secure access. Tokens are provided after a successful login.
