@@ -52,7 +52,7 @@ The **Yalla Bena Web API** is an exciting backend built using **.NET Core Web Ap
   
 - **POST**
 ```bash
-- /api/accounts/login
+/api/accounts/login
 ``` 
   Login a user and return a JWT token for secure authentication.
 
@@ -66,27 +66,27 @@ The **Yalla Bena Web API** is an exciting backend built using **.NET Core Web Ap
 
 - **GET**
 ```bash
-  /api/preferences/{userId}
+/api/preferences/{userId}
 ```
   Fetch the travel preferences of a user to provide personalized recommendations.
 
 - **POST**
-  ```bash
-  /api/preferences/{userId}
-  ```
+```bash
+ /api/preferences/{userId}
+```
   Update the preferences for a specific user to ensure a tailored travel experience.
 
 ### 3. **Booking Endpoints**
 
 - **POST**
-  ```bash
-  /api/bookings  
+```bash
+/api/bookings  
   ```
   Create a new booking for hotels, transportation, or activities.
 
 - **GET**
 ```bash
-  /api/bookings/{userId}
+/api/bookings/{userId}
 ``` 
   Get a list of all bookings made by a specific user, making travel planning easier.
 
