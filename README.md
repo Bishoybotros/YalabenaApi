@@ -12,13 +12,28 @@ The **Yalla Bena Web API** is an exciting backend built using **.NET Core Web Ap
 
 ## 🛠️ Technologies Used
 
-- **Backend:** Built with **.NET Core Web Api**, providing a RESTful Web API to handle the core operations of the app.
-- **Database:** **SQL Server** to securely store and manage all data, including user profiles, preferences, and bookings.
+**Language**
+- <p align="left">
+<a href="https://www.w3schools.com/cs/index.php">
+<img src="https://miro.medium.com/v2/resize:fit:1400/format:webp/1*_NVBTVdmjt3Qvq3CZOySXg.png" alt="C# Logo" width="100"/>
+  <img src="https://cdn-icons-png.flaticon.com/128/10124/10124692.png"alt="Asp.Net Core WebAPI" width="100"/>
+</a>
+  </p> 
+
+  
+  
+
+- **Database**:  
+<p align="left">
+  <a href="https://www.w3schools.com/sql/default.asp">
+    <img src="https://github.com/user-attachments/assets/b4ef4301-e5df-42ab-bb7d-6696100410fd" width="100"/>
+  </a>
+</p>
 - **Machine Learning:** Integrating the **KNN (K-Nearest Neighbors)** algorithm for intelligent, personalized recommendations based on user preferences and past activities.
 - **Security:** Robust authentication and data encryption protocols ensure safe and secure user interactions and data privacy. 🔒
 
 ## 🛠️ERD Daigram 
-[![View ERD Diagram]](./ERD%20Daigram/Final%20ERD%20Daigram.pdf)
+[View ERD Diagram](./ERD%20Daigram/Final%20ERD%20Daigram.pdf)
 
 
 
