@@ -24,7 +24,7 @@ The **Yalla Bena Web API** is an exciting backend built using **.NET Core Web Ap
   
   
 
-- **Database**:  
+ **Database**:  
 <p align="left">
   <a href="https://www.w3schools.com/sql/default.asp">
     <img src="https://github.com/user-attachments/assets/b4ef4301-e5df-42ab-bb7d-6696100410fd" width="100"/>
