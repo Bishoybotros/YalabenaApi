@@ -30,6 +30,7 @@ The **Yalla Bena Web API** is an exciting backend built using **.NET Core Web Ap
     <img src="https://github.com/user-attachments/assets/b4ef4301-e5df-42ab-bb7d-6696100410fd" width="100"/>
   </a>
 </p>
+
 - **Machine Learning:** Integrating the **KNN (K-Nearest Neighbors)** algorithm for intelligent, personalized recommendations based on user preferences and past activities.
 - **Security:** Robust authentication and data encryption protocols ensure safe and secure user interactions and data privacy. 🔒
 
@@ -37,7 +38,7 @@ The **Yalla Bena Web API** is an exciting backend built using **.NET Core Web Ap
 [View ERD Diagram](./ERD%20Daigram/Final%20ERD%20Daigram.pdf)
 
 
-
+---
 
 ## 🗂️ API Endpoints
 
