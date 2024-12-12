@@ -18,7 +18,7 @@ The **Yalla Bena Web API** is an exciting backend built using **.NET Core Web Ap
 - **Security:** Robust authentication and data encryption protocols ensure safe and secure user interactions and data privacy. 🔒
 
 ## 🛠️ERD Daigram 
-[View PDF](./ERD Daigram/Final ERD Daigram.pdf)
+[View PDF](ERD Daigram/Final ERD Daigram.pdf)
 
 
 ## 🗂️ API Endpoints
