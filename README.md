@@ -50,42 +50,65 @@ The **Yalla Bena Web API** is an exciting backend built using **.NET Core Web Ap
 ```
   Register a new user to start their travel adventure.
   
-- **POST /api/accounts/login**  
+- **POST**
+```bash
+- /api/accounts/login
+``` 
   Login a user and return a JWT token for secure authentication.
 
-- **GET /api/users/{id}**  
+- **GET**
+```bash
+/api/users/{id}
+```
   Retrieve the profile of a user by their ID for easy access to personal details.
 
 ### 2. **Preference Endpoints**
 
-- **GET /api/preferences/{userId}**  
+- **GET
+```bash
+  /api/preferences/{userId}
+```
   Fetch the travel preferences of a user to provide personalized recommendations.
 
-- **POST /api/preferences/{userId}**  
+- **POST**
+  ```bash
+  /api/preferences/{userId}
+  ```
   Update the preferences for a specific user to ensure a tailored travel experience.
 
 ### 3. **Booking Endpoints**
 
-- **POST /api/bookings**  
+- **POST**
+  ```bash
+  /api/bookings  
+  ```
   Create a new booking for hotels, transportation, or activities.
 
-- **GET /api/bookings/{userId}**  
+- **GET**
+```bash
+  /api/bookings/{userId}
+``` 
   Get a list of all bookings made by a specific user, making travel planning easier.
 
 ### 4. **Activity Management:**
-- **/api/activities**
-- **/api/activities/{id}**
-
-
+```bash
+/api/activities
+```
+```bash
+/api/activities/{id}
+```
 ### 5. Payment Management:
- -  **/api/payments**
-
+```bash
+/api/payments
+```
 ### 6. Real-time Notifications:
- - **/api/notifications**
-
+```bash
+/api/notifications
+```
 ### 7. Monitoring:
- - **/api/monitoring**
-
+```bash
+/api/monitoring**
+```
 ## 🛠️Technology Stack
 
 **Backend:** ASP.NET Core WebAPI 
