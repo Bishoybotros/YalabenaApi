@@ -44,7 +44,10 @@ The **Yalla Bena Web API** is an exciting backend built using **.NET Core Web Ap
 
 ### 1. **User Endpoints**
 
-- **POST /api/accounts/register**  
+- **POST**
+```bash
+/api/accounts/register
+```
   Register a new user to start their travel adventure.
   
 - **POST /api/accounts/login**  
