@@ -17,7 +17,7 @@ The **Yalla Bena Web API** is an exciting backend built using **.NET Core Web Ap
 <a href="https://www.w3schools.com/cs/index.php">
 <img src="https://miro.medium.com/v2/resize:fit:1400/format:webp/1*_NVBTVdmjt3Qvq3CZOySXg.png" alt="C# Logo" width="100"/>
   <a href="https://dotnet.microsoft.com/en-us/apps/aspnet">
-  <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/e/ee/.NET_Core_Logo.svg/2048px-.NET_Core_Logo.svg.png"alt="Asp.Net Core WebAPI" width="100"/>
+  <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/e/ee/.NET_Core_Logo.svg/2048px-.NET_Core_Logo.svg.png"alt="Asp.Net Core WebAPI" padding-left:5px width="50"/>
 </a>
   </p> 
 
