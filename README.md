@@ -64,7 +64,7 @@ The **Yalla Bena Web API** is an exciting backend built using **.NET Core Web Ap
 
 ### 2. **Preference Endpoints**
 
-- **GET
+- **GET**
 ```bash
   /api/preferences/{userId}
 ```
@@ -107,7 +107,7 @@ The **Yalla Bena Web API** is an exciting backend built using **.NET Core Web Ap
 ```
 ### 7. Monitoring:
 ```bash
-/api/monitoring**
+/api/monitoring
 ```
 ## 🛠️Technology Stack
 
